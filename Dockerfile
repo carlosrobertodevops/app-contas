@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 8050
 
 # Comando para rodar a aplicação
-CMD ["python", "index.py"]
+CMD ["python", "myindex.py"]
