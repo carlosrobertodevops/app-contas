@@ -8,6 +8,9 @@ WORKDIR /app
 # Copia o arquivo de requisitos e instala as dependências
 COPY requirements.txt requirements.txt
 
+RUN apt-get update -y
+RUN apt-get install build-essential -y
+
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
