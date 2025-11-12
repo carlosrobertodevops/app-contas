@@ -5,3 +5,8 @@ services:
       - "5000:5000"
     volumes:
       - .:/app
+    networks:
+      - obs_net
+networks:
+  obs_net:
+    external: true
